@@ -3,6 +3,8 @@ test C RS232 library, reference, https://www.teuniz.net/RS-232/
 
 testing, done
 win10 x64
+modified rs232.c
+changed COM port array, 17 items, 1st item is dummy for index 0, so index 1 = "\\\\.\\.COM1" and so on
 MinGW used
 
 ~~~
@@ -27,10 +29,10 @@ MinGW used
 // command line, compile.bat
 // 
 // Gcc, 沒有GDB 除錯資料的編譯 
-//   gcc -static -o RS232.exe main.c RS232.c
+//   gcc -static -o RS232.exe main.c RS232_xiaolaba.c
 // 
 //用G++, 包含GDB 除錯資料的編譯 g
-//   ++ -g -static -o RS232.exe main.c RS232.c
+//   ++ -g -static -o RS232.exe main.c RS232_xiaolaba.c
 
 
  
