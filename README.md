@@ -30,7 +30,7 @@ MinGW used
 //   gcc -static -o RS232.exe main.c RS232.c
 // 
 //用G++, 包含GDB 除錯資料的編譯 g
-//   ++ -g -static -o RS232.exe main.c RS232.c
+//   ++ -g -static -o RS232_db.exe main.c RS232.c
 
 
  
