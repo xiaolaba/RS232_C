@@ -10,7 +10,7 @@ MinGW used
 //JUL-30-2011, xiaolaba
 //last update 2018-NOV-17, xiaolaba
 
-// 2018-NOV-17, libray has been update, https://www.teuniz.net/RS-232/
+// 2018-NOV-17, library has been update, https://www.teuniz.net/RS-232/
 // November 22, 2017 new version
 
 // all function named RS232_ as prefix
@@ -30,7 +30,7 @@ MinGW used
 //   gcc -static -o RS232.exe main.c RS232.c
 // 
 //用G++, 包含GDB 除錯資料的編譯 g
-//   ++ -g -static -o RS232_db.exe main.c RS232.c
+//   ++ -g -static -o RS232.exe main.c RS232.c
 
 
  
@@ -52,6 +52,8 @@ int main()
 //** change com port number array with one the first dummy element, or write COM#-1
 //** Windows COM PORT number is COM1,COM2, index is -1
 //  RS232_OpenComport(6-1, 115200, "8N1"); //win32/ win64 底下有問題, 需要改library
+
+  printf("wanna open COM6\n");
   RS232_OpenComport(6, 115200, "8N1"); //win32/ win64 底下有問題, 需要改library
 
   RS232_SendByte(3, 'S');
@@ -62,6 +64,7 @@ int main()
   }
  
   RS232_CloseComport(4);
+
 }
  
 //--------------------------- main.c
