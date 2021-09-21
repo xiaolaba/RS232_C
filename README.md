@@ -3,6 +3,7 @@ test C RS232 library, reference, https://www.teuniz.net/RS-232/
 
 
 update, Test_DTR_RTS.exe and main2.c compile_main2.c
+![Test_DTR_RTS.JPG](Test_DTR_RTS.JPG)  
 
 
 testing, done  
